@@ -1,448 +1,525 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power. – We Design Impactful Digital Products</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-</head>
-<body>
-
-  <!-- ===== HEADER / NAV ===== -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">
-        <span class="nav__logo-icon">P</span>ower<span class="nav__logo-dot">.</span>
-      </a>
-
-      <!-- Desktop Menu -->
-      <ul class="nav__menu" id="nav-menu">
-        <li><a href="#" class="nav__link active">Home</a></li>
-        <li><a href="#about" class="nav__link">About Us</a></li>
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#portfolio" class="nav__link">Products</a></li>
-      </ul>
-
-      <!-- Mobile Hamburger -->
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ===== HERO SECTION ===== -->
-    <section class="hero container" id="home">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          We Design Impactful<br />
-          Digital <span class="hero__title-highlight">Products</span>
-        </h1>
-        <p class="hero__desc">
-          Help find solutions with intuitive and in accordance with client
-          business goals. we provide a high-quality services.
-        </p>
-        <div class="hero__cta">
-          <a href="#" class="btn btn--primary" id="btn-contact">Contact Us</a>
-          <a href="#" class="hero__video-btn" id="btn-video">
-            <span class="hero__video-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </span>
-            <span>Watch our<br/>introduction video</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="hero__visual">
-        <!-- Floating tool icons -->
-        <div class="hero__float hero__float--xd">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="10" fill="#FF26BE"/>
-            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="sans-serif">Xd</text>
-          </svg>
-        </div>
-        <div class="hero__float hero__float--figma">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="10" fill="#2C2C2C"/>
-            <circle cx="20" cy="14" r="5" fill="#F24E1E"/>
-            <circle cx="20" cy="26" r="5" fill="#A259FF"/>
-            <circle cx="14" cy="20" r="5" fill="#FF7262"/>
-            <circle cx="26" cy="20" r="5" fill="#1ABCFE"/>
-          </svg>
-        </div>
-        <div class="hero__float hero__float--sketch">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="10" fill="#FFC107"/>
-            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">✦</text>
-          </svg>
-        </div>
-
-        <!-- Hero image placeholder (woman with circle bg) -->
-        <div class="hero__image-wrap">
-          <div class="hero__circle-bg"></div>
-          <div class="hero__person">
-            <svg viewBox="0 0 260 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__person-svg">
-              <ellipse cx="130" cy="320" rx="90" ry="20" fill="#e8e4f5" opacity="0.5"/>
-              <!-- Body -->
-              <rect x="60" y="160" width="140" height="180" rx="20" fill="#2d2d5e"/>
-              <!-- Stripes -->
-              <rect x="60" y="175" width="140" height="12" fill="#fff" opacity="0.15"/>
-              <rect x="60" y="200" width="140" height="12" fill="#fff" opacity="0.15"/>
-              <rect x="60" y="225" width="140" height="12" fill="#fff" opacity="0.15"/>
-              <rect x="60" y="250" width="140" height="12" fill="#fff" opacity="0.15"/>
-              <!-- Head -->
-              <ellipse cx="130" cy="120" rx="55" ry="65" fill="#f5c5a3"/>
-              <!-- Hair -->
-              <ellipse cx="130" cy="75" rx="55" ry="35" fill="#2d1a0e"/>
-              <path d="M75 90 Q60 140 65 170" stroke="#2d1a0e" stroke-width="18" fill="none" stroke-linecap="round"/>
-              <path d="M185 90 Q200 140 195 170" stroke="#2d1a0e" stroke-width="18" fill="none" stroke-linecap="round"/>
-              <!-- Eyes (happy/wide) -->
-              <circle cx="110" cy="115" r="8" fill="white"/>
-              <circle cx="150" cy="115" r="8" fill="white"/>
-              <circle cx="112" cy="117" r="5" fill="#2d1a0e"/>
-              <circle cx="152" cy="117" r="5" fill="#2d1a0e"/>
-              <!-- Mouth smile -->
-              <path d="M113 138 Q130 155 147 138" stroke="#d4856a" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <!-- Arms up -->
-              <path d="M60 180 Q30 140 20 110" stroke="#f5c5a3" stroke-width="22" fill="none" stroke-linecap="round"/>
-              <path d="M200 180 Q230 140 240 110" stroke="#f5c5a3" stroke-width="22" fill="none" stroke-linecap="round"/>
-              <!-- Hands -->
-              <circle cx="20" cy="105" r="16" fill="#f5c5a3"/>
-              <circle cx="240" cy="105" r="16" fill="#f5c5a3"/>
-            </svg>
-          </div>
-        </div>
-
-        <!-- Stats card -->
-        <div class="hero__stats">
-          <div class="hero__stats-avatars">
-            <div class="avatar" style="background:#f5c5a3"></div>
-            <div class="avatar" style="background:#a259ff"></div>
-            <div class="avatar" style="background:#1abcfe"></div>
-            <div class="avatar" style="background:#ff7262"></div>
-          </div>
-          <div>
-            <p class="hero__stats-count">120+ Employees</p>
-            <p class="hero__stats-rating">⭐ 5.0 (3.1K Reviews)</p>
-          </div>
-        </div>
-
-        <!-- Decorative arc -->
-        <div class="hero__arc"></div>
-      </div>
-    </section>
-
-    <!-- ===== TRUSTED BY ===== -->
-    <section class="trusted">
-      <div class="container">
-        <p class="trusted__label">Trusted By Greatest Companies</p>
-        <div class="trusted__logos">
-          <span class="trusted__logo trusted__logo--google">Google</span>
-          <span class="trusted__logo trusted__logo--airbnb">airbnb</span>
-          <span class="trusted__logo trusted__logo--creative">Creative<br/>Market</span>
-          <span class="trusted__logo trusted__logo--shopify">shopify</span>
-          <span class="trusted__logo trusted__logo--amazon">amazon</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PORTFOLIO ===== -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="section__title">We Create World-Class Digital Products</h2>
-        <p class="section__desc">By information about design the world to the best instructors, heatc helping By information</p>
-
-        <div class="portfolio__grid">
-          <!-- Big card -->
-          <article class="portfolio__card portfolio__card--big">
-            <div class="portfolio__card-img portfolio__card-img--banking">
-              <div class="card-mockup">
-                <div class="mockup-phone">
-                  <div class="mockup-screen">
-                    <div class="mockup-header" style="font-size:6px;color:#333;font-weight:700">Easy Banking<br/>with Simple Way</div>
-                    <div class="mockup-balance">$143,421.20</div>
-                    <div class="mockup-row"></div>
-                    <div class="mockup-row"></div>
-                    <div class="mockup-chip" style="background:#ff7262"></div>
-                  </div>
-                </div>
-                <div class="mockup-card-accent">
-                  <div style="font-size:8px;color:#fff;font-weight:700;margin-bottom:4px">$120$</div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio__card-meta">
-              <span class="portfolio__tag">App Design</span>
-              <span class="portfolio__date">June 20, 2022</span>
-            </div>
-            <h3 class="portfolio__card-title">App Redesign</h3>
-            <p class="portfolio__card-desc">By information about design the world to the best instructors, heatc helping By information about design the world to the best instructors, heatc helping</p>
-          </article>
-
-          <!-- Small cards right column -->
-          <div class="portfolio__right">
-            <article class="portfolio__card portfolio__card--sm">
-              <div class="portfolio__card-img portfolio__card-img--luca">
-                <div class="luca-placeholder">
-                  <div class="luca-bg"></div>
-                  <div class="luca-char">🐸</div>
-                </div>
-              </div>
-              <div class="portfolio__card-meta">
-                <span class="portfolio__tag">App Design</span>
-                <span class="portfolio__date">June 20, 2022</span>
-              </div>
-              <h3 class="portfolio__card-title">Redesign Channel Website Landing Page</h3>
-            </article>
-
-            <article class="portfolio__card portfolio__card--sm">
-              <div class="portfolio__card-img portfolio__card-img--locator">
-                <div class="map-placeholder">
-                  <div class="map-dot"></div>
-                  <div class="map-dot map-dot--2"></div>
-                  <div class="map-lines"></div>
-                </div>
-              </div>
-              <div class="portfolio__card-meta">
-                <span class="portfolio__tag">App Design</span>
-                <span class="portfolio__date">June 20, 2022</span>
-              </div>
-              <h3 class="portfolio__card-title">New Locator App For a New Company</h3>
-            </article>
-
-            <article class="portfolio__card portfolio__card--sm">
-              <div class="portfolio__card-img portfolio__card-img--rental">
-                <div class="rental-placeholder">
-                  <div class="rental-bar"></div>
-                  <div class="rental-bar rental-bar--2"></div>
-                  <div class="rental-nodes">
-                    <div class="rental-node"></div>
-                    <div class="rental-node"></div>
-                    <div class="rental-node"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__card-meta">
-                <span class="portfolio__tag">App Design</span>
-                <span class="portfolio__date">June 20, 2022</span>
-              </div>
-              <h3 class="portfolio__card-title">Rental Rooms Web App Platform</h3>
-            </article>
-
-            <article class="portfolio__card portfolio__card--sm">
-              <div class="portfolio__card-img portfolio__card-img--calendar">
-                <div class="cal-placeholder">
-                  <div class="cal-avatar"></div>
-                  <div class="cal-rows">
-                    <div class="cal-row"></div>
-                    <div class="cal-row"></div>
-                    <div class="cal-row"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__card-meta">
-                <span class="portfolio__tag">App Design</span>
-                <span class="portfolio__date">June 20, 2022</span>
-              </div>
-              <h3 class="portfolio__card-title">Calendar App for Big SASS Company</h3>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS ===== -->
-    <section class="testimonials" id="about">
-      <div class="container">
-        <!-- Decorative dots -->
-        <div class="dots dots--left"></div>
-        <div class="dots dots--right"></div>
-
-        <h2 class="section__title testimonials__heading">
-          Let's Hear<br /><strong>What They Says</strong>
-        </h2>
-
-        <div class="testimonials__slider" id="testimonials-slider">
-          <div class="testimonials__quote-icon testimonials__quote-icon--open">❝</div>
-          <div class="testimonials__quote-icon testimonials__quote-icon--close">❞</div>
-
-          <div class="testimonials__slides">
-            <div class="testimonials__slide active" data-index="0">
-              <p class="testimonials__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vel lobortis tincidunt
-                fames quisque mauris at diam. Nullam morbi ipsum turpis amet id posuere torto
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-              </p>
-            </div>
-            <div class="testimonials__slide" data-index="1">
-              <p class="testimonials__text">
-                Exceptional team that brings creative visions to life. Their attention to detail and
-                commitment to client satisfaction is unmatched in the industry. Working with them
-                was truly a transformative experience for our brand.
-              </p>
-            </div>
-            <div class="testimonials__slide" data-index="2">
-              <p class="testimonials__text">
-                The results exceeded our expectations. They delivered on time, within budget, and
-                the final product was polished and professional. Highly recommended to anyone
-                looking for top-tier digital design services.
-              </p>
-            </div>
-          </div>
-
-          <!-- Avatar navigation -->
-          <div class="testimonials__avatars" id="testimonial-avatars">
-            <button class="testimonials__avatar-btn" data-slide="0">
-              <div class="testimonials__avatar" style="background: #f5c5a3"></div>
-            </button>
-            <button class="testimonials__avatar-btn" data-slide="1">
-              <div class="testimonials__avatar" style="background: #a259ff"></div>
-            </button>
-            <button class="testimonials__avatar-btn active" data-slide="2">
-              <div class="testimonials__avatar" style="background: #f4b942; border: 3px solid #6c5ce7;"></div>
-            </button>
-            <button class="testimonials__avatar-btn" data-slide="3">
-              <div class="testimonials__avatar" style="background: #74b9ff"></div>
-            </button>
-            <button class="testimonials__avatar-btn" data-slide="4">
-              <div class="testimonials__avatar" style="background: #fd79a8"></div>
-            </button>
-          </div>
-
-          <div class="testimonials__author">
-            <p class="testimonials__name" id="testimonials-name">Ricky Aprilia</p>
-            <p class="testimonials__role" id="testimonials-role">Founder of Varibo</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== HOW WE CAN HELP + NEWSLETTER ===== -->
-    <section class="help" id="services">
-      <div class="container help__inner">
-        <!-- Left: Newsletter -->
-        <div class="help__newsletter">
-          <h2 class="help__title">How We Can Help You</h2>
-          <p class="help__desc">
-            Follow our newsletter. We will regulary update our latest project and availability.
-          </p>
-          <div class="help__form">
-            <div class="help__input-wrap">
-              <svg class="help__input-icon" viewBox="0 0 20 20" fill="none"><path d="M2 4h16v12H2V4zm0 0l8 7 8-7" stroke="#aaa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <input type="email" id="newsletter-email" class="help__input" placeholder="Enter your email address" />
-            </div>
-            <button class="btn btn--primary" id="btn-subscribe">Subscribe</button>
-          </div>
-          <div class="help__feedback" id="newsletter-feedback"></div>
-        </div>
-
-        <!-- Right: Services grid -->
-        <div class="help__services">
-          <div class="help__service-card">
-            <div class="help__service-icon help__service-icon--purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            </div>
-            <h3 class="help__service-title">UI/UX Design</h3>
-            <p class="help__service-desc">Sometimes features require a short description</p>
-          </div>
-          <div class="help__service-card">
-            <div class="help__service-icon help__service-icon--purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3 class="help__service-title">Logo Branding</h3>
-            <p class="help__service-desc">Sometimes features require a short description</p>
-          </div>
-          <div class="help__service-card">
-            <div class="help__service-icon help__service-icon--purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
-            </div>
-            <h3 class="help__service-title">App Design</h3>
-            <p class="help__service-desc">Sometimes features require a short description</p>
-          </div>
-          <div class="help__service-card">
-            <div class="help__service-icon help__service-icon--purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            </div>
-            <h3 class="help__service-title">Website Design</h3>
-            <p class="help__service-desc">Sometimes features require a short description</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <a href="#" class="nav__logo footer__logo">
-          <span class="nav__logo-icon">P</span>ower<span class="nav__logo-dot">.</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power. – We Design Impactful Digital Products</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-icon"
+            ><img src="./assets/title.png" alt="Power agency"
+          /></span>
         </a>
-        <div class="footer__socials">
-          <a href="#" class="footer__social" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="Twitter">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="Pinterest">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-        </div>
-      </div>
 
-      <hr class="footer__divider" />
+        <!-- Desktop Menu -->
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About Us</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#portfolio" class="nav__link">Products</a></li>
+        </ul>
 
-      <div class="footer__bottom">
-        <div class="footer__links-group">
-          <p class="footer__links-label">Company</p>
-          <div class="footer__links">
-            <a href="#" class="footer__link">About Us</a>
-            <a href="#" class="footer__link">Press</a>
-            <a href="#" class="footer__link">Investors</a>
-            <a href="#" class="footer__link">Events</a>
-            <a href="#" class="footer__link">Terms of use</a>
-            <a href="#" class="footer__link">Privacy policy</a>
+        <!-- Mobile Hamburger -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero container" id="home">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            We Design Impactful<br />
+            Digital <span class="hero__title-highlight">Products</span>
+          </h1>
+          <p class="hero__desc">
+            Help find solutions with intuitive and in accordance with client
+            business goals. we provide a high-quality services.
+          </p>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--primary" id="btn-contact">Contact Us</a>
+            <a href="#" class="hero__video-btn" id="btn-video">
+              <span class="hero__video-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+              <span>Watch our<br />introduction video</span>
+            </a>
           </div>
         </div>
-        <a href="#" class="btn btn--primary" id="footer-contact-btn">Contact Us</a>
+
+        <div class="hero__visual">
+          <!-- Floating tool icons -->
+          <div class="hero__float hero__float--sketch">
+            <img src="./assets/hero/diamond.png" alt="Sketch" />
+          </div>
+          <div class="hero__float hero__float--xd">
+            <img src="./assets/hero/xd.png" alt="Xd" />
+          </div>
+          <div class="hero__float hero__float--figma">
+            <img src="./assets/hero/figma.png" alt="Figma" />
+          </div>
+
+          <!-- Hero image placeholder (woman with circle bg) -->
+          <div class="hero__image-wrap">
+            <div class="hero__person">
+              <img src="./assets/hero/woman.png" alt="" />
+            </div>
+          </div>
+
+          <!-- Stats card -->
+          <div class="hero__stats">
+            <div class="hero__stats-avatars">
+              <div class="avatar" style="background: #f5c5a3">
+                <img src="./assets/employees/employee1.png" alt="Richard" />
+              </div>
+              <div class="avatar" style="background: #a259ff">
+                <img src="./assets/employees/employee2.png" alt="John Doe" />
+              </div>
+              <div class="avatar" style="background: #1abcfe">
+                <img src="./assets/employees/employee3.png" alt="Rakesh" />
+              </div>
+              <div class="avatar" style="background: #ff7262">
+                <img src="./assets/employees/employee4.png" alt="Rita" />
+              </div>
+            </div>
+            <div>
+              <p class="hero__stats-count">120+ Employees</p>
+              <p class="hero__stats-rating">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="#6c5ce7"
+                  style="
+                    vertical-align: middle;
+                    margin-top: -2px;
+                    margin-right: 2px;
+                  "
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <span style="color: var(--navy); font-weight: 700">5.0</span>
+                (3.1K Reviews)
+              </p>
+            </div>
+          </div>
+
+          <!-- Decorative arc -->
+          <div class="hero__arc"></div>
+        </div>
+      </section>
+
+      <!-- ===== TRUSTED BY ===== -->
+      <section class="trusted">
+        <div class="container">
+          <p class="trusted__label">Trusted By Greatest Companies</p>
+          <div class="trusted__logos">
+            <span class="trusted__logo trusted__logo--google">
+              <img src="./assets/logo/google.png" alt="" />
+            </span>
+            <span class="trusted__logo trusted__logo--airbnb">
+              <img src="./assets/logo/airbnb.png" alt="" />
+            </span>
+            <span class="trusted__logo trusted__logo--creative">
+              <img src="./assets/logo/creative_market.png" alt="" />
+            </span>
+
+            <span class="trusted__logo trusted__logo--shopify">
+              <img src="./assets/logo/shopify.png" alt="" />
+            </span>
+            <span class="trusted__logo trusted__logo--amazon">
+              <img src="./assets/logo/amazon.png" alt="" />
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="section__title">We Create World-Class Digital Products</h2>
+          <p class="section__desc">
+            By information about design the world to the best instructors, heatc
+            helping By information
+          </p>
+
+          <div class="portfolio__grid">
+            <!-- Big card -->
+            <article class="portfolio__card portfolio__card--big">
+              <div class="portfolio__card-img portfolio__card-img--banking">
+                <img src="./assets/digital products/app_design1.png" alt="" />
+              </div>
+              <div class="portfolio__card-meta">App Design - June 20, 2022</div>
+              <h3 class="portfolio__card-title">App Redesign</h3>
+              <p class="portfolio__card-desc">
+                By information about design the world to the best instructors,
+                heatc helping By information about design the world to the best
+                instructors, heatc helping
+              </p>
+            </article>
+
+            <!-- Small cards right column -->
+            <div class="portfolio__right">
+              <article class="portfolio__card portfolio__card--sm">
+                <div class="portfolio__card-img portfolio__card-img--luca">
+                  <img src="./assets/digital products/app_design2.png" alt="" />
+                </div>
+                <div class="portfolio__card-meta">
+                  App Design - June 20, 2022
+                </div>
+                <h3 class="portfolio__card-title">
+                  Redesign Channel Website Landing Page
+                </h3>
+              </article>
+
+              <article class="portfolio__card portfolio__card--sm">
+                <div class="portfolio__card-img portfolio__card-img--locator">
+                  <img src="./assets/digital products/app_design3.png" alt="" />
+                </div>
+                <div class="portfolio__card-meta">
+                  App Design - June 20, 2022
+                </div>
+                <h3 class="portfolio__card-title">
+                  New Locator App For a New Company
+                </h3>
+              </article>
+
+              <article class="portfolio__card portfolio__card--sm">
+                <div class="portfolio__card-img portfolio__card-img--rental">
+                  <img src="./assets/digital products/app_design4.png" alt="" />
+                </div>
+                <div class="portfolio__card-meta">
+                  App Design - June 20, 2022
+                </div>
+                <h3 class="portfolio__card-title">
+                  Rental Rooms Web App Platform
+                </h3>
+              </article>
+
+              <article class="portfolio__card portfolio__card--sm">
+                <div class="portfolio__card-img portfolio__card-img--calendar">
+                  <img src="./assets/digital products/app_design5.png" alt="" />
+                </div>
+                <div class="portfolio__card-meta">
+                  App Design - June 20, 2022
+                </div>
+                <h3 class="portfolio__card-title">
+                  Calendar App for Big SASS Company
+                </h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TESTIMONIALS ===== -->
+      <section class="testimonials" id="about">
+        <div class="container">
+          <!-- Decorative dots -->
+          <div class="dots dots--left"></div>
+          <div class="dots dots--right"></div>
+
+          <h2 class="section__title testimonials__heading">
+            Let's Hear<br /><strong>What They Says</strong>
+          </h2>
+
+          <div class="testimonials__slider" id="testimonials-slider">
+            <div
+              class="testimonials__quote-icon testimonials__quote-icon--open"
+            >
+              ❝
+            </div>
+            <div
+              class="testimonials__quote-icon testimonials__quote-icon--close"
+            >
+              ❞
+            </div>
+
+            <div class="testimonials__slides">
+              <div class="testimonials__slide active" data-index="0">
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                  vel lobortis tincidunt fames quisque mauris at diam. Nullam
+                  morbi ipsum turpis amet id posuere torto quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore.
+                </p>
+              </div>
+              <div class="testimonials__slide" data-index="1">
+                <p class="testimonials__text">
+                  Exceptional team that brings creative visions to life. Their
+                  attention to detail and commitment to client satisfaction is
+                  unmatched in the industry. Working with them was truly a
+                  transformative experience for our brand.
+                </p>
+              </div>
+              <div class="testimonials__slide" data-index="2">
+                <p class="testimonials__text">
+                  The results exceeded our expectations. They delivered on time,
+                  within budget, and the final product was polished and
+                  professional. Highly recommended to anyone looking for
+                  top-tier digital design services.
+                </p>
+              </div>
+            </div>
+
+            <!-- Avatar navigation -->
+            <!-- <div class="testimonials__avatars" id="testimonial-avatars">
+              <button class="testimonials__avatar-btn" data-slide="0">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer1.png" alt="" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn" data-slide="1">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer2.png" alt="" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn active" data-slide="2">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer3.png" alt="" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn" data-slide="3">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer4.png" alt="" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn" data-slide="4">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer5.png" alt="" />
+                </div>
+              </button>
+            </div> -->
+
+            <div class="testimonials__avatars" id="testimonial-avatars">
+              <button class="testimonials__avatar-btn" data-slide="0">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer1.png" alt="User 1" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn" data-slide="1">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer2.png" alt="User 2" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn active" data-slide="2">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer3.png" alt="User 3" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn" data-slide="3">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer4.png" alt="User 4" />
+                </div>
+              </button>
+              <button class="testimonials__avatar-btn" data-slide="4">
+                <div class="testimonials__avatar">
+                  <img src="./assets/reviewers/reviewer5.png" alt="User 5" />
+                </div>
+              </button>
+            </div>
+
+            <div class="testimonials__author">
+              <p class="testimonials__name" id="testimonials-name">
+                Ricky Aprilia
+              </p>
+              <p class="testimonials__role" id="testimonials-role">
+                Founder of Varibo
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HOW WE CAN HELP + NEWSLETTER ===== -->
+      <section class="help" id="services">
+        <div class="container help__inner">
+          <!-- Left: Newsletter -->
+          <div class="help__newsletter">
+            <h2 class="help__title">How We Can Help You</h2>
+            <p class="help__desc">
+              Follow our newsletter. We will regulary update our latest project
+              and availability.
+            </p>
+            <div class="help__form">
+              <div class="help__input-wrap">
+                <svg class="help__input-icon" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M2 4h16v12H2V4zm0 0l8 7 8-7"
+                    stroke="#aaa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  class="help__input"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <button class="btn btn--primary" id="btn-subscribe">
+                Subscribe
+              </button>
+            </div>
+            <div class="help__feedback" id="newsletter-feedback"></div>
+          </div>
+
+          <!-- Right: Services grid -->
+          <div class="help__services">
+            <div class="help__service-card">
+              <div class="help__service-icon help__service-icon--purple">
+                <img src="./assets/services/ui_ux_design.png" alt="" />
+              </div>
+              <h3 class="help__service-title">UI/UX Design</h3>
+              <p class="help__service-desc">
+                Sometimes features require a short description
+              </p>
+            </div>
+            <div class="help__service-card">
+              <div class="help__service-icon help__service-icon--purple">
+                <img src="./assets/services/logo_branding.png" alt="" />
+              </div>
+              <h3 class="help__service-title">Logo Branding</h3>
+              <p class="help__service-desc">
+                Sometimes features require a short description
+              </p>
+            </div>
+            <div class="help__service-card">
+              <div class="help__service-icon help__service-icon--purple">
+                <img src="./assets/services/app_design.png" alt="" />
+              </div>
+              <h3 class="help__service-title">App Design</h3>
+              <p class="help__service-desc">
+                Sometimes features require a short description
+              </p>
+            </div>
+            <div class="help__service-card">
+              <div class="help__service-icon help__service-icon--purple">
+                <img src="./assets/services/web_design.png" alt="" />
+              </div>
+              <h3 class="help__service-title">Website Design</h3>
+              <p class="help__service-desc">
+                Sometimes features require a short description
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="#" class="nav__logo footer__logo">
+            <span class="nav__logo-icon"
+              ><img src="./assets/title_footer.png" alt=""
+            /></span>
+          </a>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <hr class="footer__divider" />
+
+        <div class="footer__bottom">
+          <div class="footer__links-group">
+            <p class="footer__links-label">Company</p>
+            <div class="footer__links">
+              <a href="#" class="footer__link">About Us</a>
+              <a href="#" class="footer__link">Press</a>
+              <a href="#" class="footer__link">Investors</a>
+              <a href="#" class="footer__link">Events</a>
+              <a href="#" class="footer__link">Terms of use</a>
+              <a href="#" class="footer__link">Privacy policy</a>
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary" id="footer-contact-btn"
+            >Contact Us</a
+          >
+        </div>
+
+        <p class="footer__copy">© power 2021 – All Rights Reserved</p>
       </div>
+    </footer>
 
-      <p class="footer__copy">© power 2021 – All Rights Reserved</p>
-    </div>
-  </footer>
-
-  <!-- ===== VIDEO MODAL ===== -->
-  <div class="modal" id="video-modal" aria-hidden="true">
-    <div class="modal__overlay" id="modal-overlay"></div>
-    <div class="modal__box">
-      <button class="modal__close" id="modal-close" aria-label="Close">✕</button>
-      <div class="modal__video-wrap">
-        <div class="modal__video-placeholder">
-          <div class="modal__play-icon">▶</div>
-          <p>Introduction Video</p>
+    <!-- ===== VIDEO MODAL ===== -->
+    <div class="modal" id="video-modal" aria-hidden="true">
+      <div class="modal__overlay" id="modal-overlay"></div>
+      <div class="modal__box">
+        <button class="modal__close" id="modal-close" aria-label="Close">
+          ✕
+        </button>
+        <div class="modal__video-wrap">
+          <div class="modal__video-placeholder">
+            <div class="modal__play-icon">▶</div>
+            <p>Introduction Video</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -58,6 +58,32 @@ $(function () {
   
   activateTestimonial(1);
 
+  const buttons = document.querySelectorAll('.testimonials__avatar-btn');
+
+buttons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    updateActiveAvatar(index);
+  });
+});
+
+function updateActiveAvatar(activeIndex) {
+  buttons.forEach((btn, i) => {
+    // Remove all classes first
+    btn.classList.remove('active', 'neighbor');
+
+    if (i === activeIndex) {
+      btn.classList.add('active');
+    } 
+    // Add 'neighbor' class to buttons directly next to the active one
+    else if (i === activeIndex - 1 || i === activeIndex + 1) {
+      btn.classList.add('neighbor');
+    }
+  });
+}
+
+// Optional: Initialize the middle one as active on load
+updateActiveAvatar(2);
+
   $(document).on('click', '.testimonials__avatar-btn', function () {
     const idx = parseInt($(this).data('slide'), 10);
     activateTestimonial(idx);
